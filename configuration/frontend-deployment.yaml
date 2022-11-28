@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: fisseb/udagram-frontend:v3a
+        image: fisseb/udagram-frontend:local
         ports:
         - containerPort: 80
