@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: reverseproxy
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: reverseproxy
-          image: fisseb/udagram-reverseproxy:vaa
+          image: fisseb/udagram-reverseproxy:vab
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

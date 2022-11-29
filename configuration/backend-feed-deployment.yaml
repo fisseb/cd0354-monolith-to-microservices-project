@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: backend-feed
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-feed
-          image: fisseb/udagram-api-feed:vaa
+          image: fisseb/udagram-api-feed:vab
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
